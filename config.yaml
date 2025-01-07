@@ -1,0 +1,18 @@
+db-connect: "mongodb://admin:782628925qRT##@127.0.0.1:27017"
+brute-word: "sub_wordlist.txt"
+alterx-word: "merged_wordlist.txt"
+nuclei-config: "bugbounty-config.yaml"
+resolvers-word: "resolvers.txt"
+server: "0.0.0.0:8779"
+enable-brute: true
+enable-vul: true
+output-type: "csv"
+subdomain-enum:
+  - subfinder
+  - crtsh
+  - alterx
+port-num: "100"
+Vul-scan:
+  - nuclei
+  - xscan
+
