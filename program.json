@@ -1,0 +1,7 @@
+[
+    {
+        "program": "baidu",
+        "scope": ["baidu.com"],
+        "noscope": ["www.baidu.com"]
+    }
+]
