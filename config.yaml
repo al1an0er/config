@@ -1,15 +1,15 @@
-db-connect: "mongodb://admin:782628925qRT##@127.0.0.1:27017"
+db-connect: "mongodb://admin:xxxx@127.0.0.1:27017"
 brute-word: "/root/.watchtower/sub_wordlist.txt"
 alterx-word: "/root/.watchtower/merged_wordlist.txt"
 nuclei-config: "/root/.watchtower/nuclei-config.yaml"
 xscan-config: "/root/.watchtower/xscan-config.yaml"
 resolvers-word: "/root/.watchtower/resolvers.txt"
-server: "0.0.0.0:8779"
+cdn-dict: "/root/.watchtower/cdn_info.json"
+enable-crawlsub: true
 enable-brute: false
 enable-vul: true
-output-type: "csv"
-port-num: "top-100"
 Vul-scan:
   - nuclei
   - xscan
+
 
