@@ -4,6 +4,7 @@ alterx-word: "/root/.watchtower/merged_wordlist.txt"
 nuclei-config: "/root/.watchtower/nuclei-config.yaml"
 xscan-config: "/root/.watchtower/xscan-config.yaml"
 resolvers-word: "/root/.watchtower/resolvers.txt"
+quake-api: "-"
 cdn-dict: "/root/.watchtower/cdn_info.json"
 enable-crawlsub: true
 enable-brute: false
