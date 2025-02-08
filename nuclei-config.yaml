@@ -7,8 +7,9 @@
 ## 设置代理
 #proxy: 'http://127.0.0.1:8080'
 ## 超时
-timeout: 5
-no-max-host-error: true
+timeout: 10
+#no-max-host-error: false
+no-mhe: true
 
 # 所有 HTTP 请求中要包含的标头
 ## 便于运营识别是内外部扫描流量
@@ -74,10 +75,10 @@ stats: false
 #   - cves/
 #   - vulnerabilities/
 #   - misconfiguration/
-
+#templates: 'http/technologies/fingerprinthub-web-fingerprints.yaml'
 # 基于标签的模板执行
-# tags: exposures,cve
-
+tags: exposures,cve
+#type: http
 # 模板过滤器
 # tags: exposures,cve
 # author: geeknik,pikpikcu,dhiyaneshdk
@@ -87,9 +88,10 @@ include-tags:
   - api
   - exposure
 include-templates:
-  - http/exposures/apis
+  - http/exposures/
   - http/exposures/apis/swagger-api.yaml
   - http/technologies/fingerprinthub-web-fingerprints.yaml
+  - http/vulnerabilities/generic/cors-misconfig.yaml
 # 模板拒绝列表
 exclude-tags: 
   - xss
@@ -103,7 +105,7 @@ exclude-tags:
   - udp
   - enum
   - bokbot
-  - trojan 
+  - trojan
   - creds-stuffing
   - token-spray
   - local
@@ -165,6 +167,3 @@ exclude-templates: # Template based exclusion
   - http/cves/2017/
   - http/cves/2018/
   - http/cves/2019/
-  - http/cves/2020/
-  - http/cves/2021/
-  - http/cves/2022/
