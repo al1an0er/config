@@ -9,6 +9,7 @@ cdn-dict: "/root/.watchtower/cdn_info.json"
 enable-crawlsub: true
 enable-brute: false
 enable-vul: true
+enable-fileleak: false
 Vul-scan:
   - nuclei
   - xscan
